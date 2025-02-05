@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>validation</title>
+<script>
+function validate(){
+let uname=document.getElementById("uname").value;
+let pwd=document.getElementById("pwd").value;
+if(uname==""||pwd=="")
+{
+alert("enetr the name/password");
+return false;
+}
+if(pwd.length<6){
+alert("pwd must have 6 or more character");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form onsubmit="validate()">
+<p>name:<input type="text" id="uname"></p><br>
+<p>password:<input type="password" id="pwd"></p><br>
+<input type="submit" value="register">
+</form>
+</body>
+</html>
